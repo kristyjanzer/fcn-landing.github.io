@@ -109,7 +109,7 @@ button {
 .container {
 	max-width: 88.125em;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 1.25em;
 	width: 100%;
 	position: relative;
 	z-index: 10;
@@ -118,8 +118,8 @@ button {
 .button {
 	font-weight: 500;
 	text-align: center;
-	padding: 18px 20px;
-	font-size: 16px;
+	padding: 1.125em 1.25em;
+	font-size: 1em;
 	font-family: $default-font;
 	cursor: pointer;
 	background-color: $white;
