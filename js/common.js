@@ -7,24 +7,6 @@ $('.content-ranks-slider').slick({
     infinite: false,
     responsive: [
       {
-        breakpoint: 1600,
-          settings: {
-            dots: true,
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1100,
-          settings: {
-            dots: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        },
-      },
-      {
         breakpoint: 500,
           settings: {
             dots: true,
