@@ -33,18 +33,49 @@
 <body>
 
 	<header class="header">
-		<div class="container">
-			<div class="header__menu header-menu"></div>
-			<h1 class="header__title">Три богатыря</h1>
-			<div class="header__info header-info">
-				<div class="header-info__sponsor header-sponsor">
-					<div class="header-sponsor__text">Генеральный спонсор</div>
-					<div class="header-sponsor__icon">
-						<img src="img/sponsors/gazprombank.svg" alt="Газпромбанк">
+			<div class="header__row">
+				<div class="header__top">
+					<a href="index.html" class="header__logo logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<div class="header__menu main-menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a href="#section-1" class="main-menu__link">Сражение</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#section-2" class="main-menu__link">Механика</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#section-3" class="main-menu__link">Призы и награды</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#section-4" class="main-menu__link">Великий пир</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#section-5" class="main-menu__link">Спонсоры</a>
+							</li>
+						</ul>
+					</div>
+					<a href="https://wm.fincpanetwork.ru/site/index" class="header__button main-button">Участвовать</a>
+				</div>
+				<h1 class="header__title">Три богатыря</h1>
+				<img src="img/heroes.png" class="header__heroes" alt="Heroes">
+				<div class="header__info header-info">
+					<div class="header-info__row">
+						<div class="header-info__sponsor header-sponsor">
+							<div class="header-sponsor__text">Генеральный спонсор</div>
+							<div class="header-sponsor__icon">
+								<img src="img/sponsors/gazprombank.svg" alt="Газпромбанк">
+							</div>
+						</div>
+						<div class="header-info__date">ноябрь 2025 - апрель 2026</div>
 					</div>
 				</div>
-				<div class="header-info__date"></div>
 			</div>
+		<div class="header__button-menu header-button-menu">
+			<div class="header-button-menu__icon"></div>
+			<div class="header-button-menu__body"></div>
 		</div>
 	</header>
 
@@ -59,7 +90,7 @@
 			</div>
 		</section>
 
-		<section class="challenge">
+		<section class="challenge" id="section-1">
 			<div class="container">
 				<div class="challenge__row">
 					<h2 class="challenge__title title title--accent">Сражайся и зарабатывай больше с первых подтверждённых лидов</h2>
@@ -133,7 +164,7 @@
 			</div>
 		</section>
 
-		<section class="mechanics">
+		<section class="mechanics" id="section-2">
 			<div class="mechanics__row">
 				<h2 class="mechanics__title title title--green">Механика сражения</h2>
 				<div class="mechanics__items mechanics-items">
@@ -147,7 +178,7 @@
 			</div>
 		</section>
 
-		<section class="prizes">
+		<section class="prizes" id="section-3">
 			<div class="container">
 				<h2 class="prizes__title title title--accent">Призы и награды</h2>
 				<h3 class="prizes__subtitle">Финальный розыгрыш суперпризов</h3>
@@ -195,7 +226,7 @@
 			</div>
 		</section>
 
-		<section class="party">
+		<section class="party" id="section-4">
 			<div class="party__row">
 				<div class="party__heading">
 					<h2 class="party__title title title--white">Финальная вечеринка</h2>
@@ -216,7 +247,54 @@
 				<a href="https://wm.fincpanetwork.ru/site/index" class="party__button main-button">Хочу в финал</a>
 			</div>
 		</section>
+
+		<section class="join" id="section-5">
+			<div class="container">
+				<div class="join__sponsors sponsors">
+					<div class="sponsors__col">
+						<div class="sponsors__general sponsors-general">
+							<div class="sponsors-general__text">Генеральный спонсор</div>
+							<img class="sponsors-general__image" src="img/sponsors/gazprombank.svg" alt="Газпромбанк">
+						</div>
+					</div>
+					<div class="sponsors__col">
+						<ul class="sponsors__list">
+							<li class="sponsors__item">
+								<img class="sponsors__image" src="img/sponsors/psb.svg" alt="ПСБ">
+							</li>
+							<li class="sponsors__item">
+								<img class="sponsors__image" src="img/sponsors/tocka-bank.svg" alt="Точка Банк">
+							</li>
+							<li class="sponsors__item">
+								<img class="sponsors__image" src="img/sponsors/ozon-bank.svg" alt="Ozon Банк">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="join__title title title--white">Стань частью дружины CPA</h2>
+				<p class="join__info">Только смелые попадают в летопись. Только сильные забирают золото. Присоединяйся к «Трём богатырям» и впиши своё имя в историю FCN!</p>
+				<a href="https://wm.fincpanetwork.ru/site/index" class="join__button main-button main-button--ttu">Вступить в дружину</a>
+			</div>
+		</section>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__logo logo-date">
+					<div class="logo-date__image">
+						<img src="img/logo.svg" alt="Logo">
+					</div>
+					<div class="logo-date__info">© FCN, 2025-2026</div>
+				</div>
+				<ul class="footer__connect connect-menu">
+					<div class="connect-menu__item">Правила конкурса</div>
+					<div class="connect-menu__item">Поддержка: <a class="connect-menu__link" href="https://t.me/fcnsupport">@fcnsupport</a></div>
+					<div class="connect-menu__item">Telegram: <a class="connect-menu__link" href="https://t.me/fincpanetworkru">@fincpanetworkru</a></div>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="js/scripts.min.js"></script>
