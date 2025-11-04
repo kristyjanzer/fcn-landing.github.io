@@ -160,7 +160,7 @@ section {
     font-size: 1em;
     line-height: 100%;
     font-weight: 500;
-    border-radius: 16px;
+    border-radius: 0.727em;
 	background: $primary;
     padding: 0.863em 1em;
     text-align: center;
@@ -335,7 +335,7 @@ section {
 	&__item {
 		min-height: 9.818em;
 		width: 100%;
-		border-radius: 32px;
+		border-radius: 1.454em;
 		background-color: #255255;
 		padding: 1.272em 2.272em;
 		display: flex;
@@ -351,7 +351,7 @@ section {
 	}
 
 	&__mark {
-		border-radius: 48px;
+		border-radius: 2.4em;
 		background: #F4D5AE;
 		padding: 0.4em 1.1em;
 		font-size: 0.909em;
@@ -378,7 +378,7 @@ section {
 		align-items: center;
 		gap: 0.454em;
 		white-space: nowrap;
-		border-radius: 16px;
+		border-radius: 0.727em;
 		background: #85CAC5;
 		padding: 0.454em 0.909em;
 
@@ -400,7 +400,7 @@ section {
 		align-items: center;
 		gap: 0.454em;
 		white-space: nowrap;
-		border-radius: 16px;
+		border-radius: 0.727em;
 		background: rgba(9, 36, 35, 0.5);
 		padding: 0.454em 0.909em;
 
@@ -429,7 +429,7 @@ section {
 .progress-line {
 	height: 0.272em;
 	background-color: #CACFD2;
-	border-radius: 5px;
+	border-radius: 0.227em;
 	position: relative;
 	width: 100%;
 	margin-bottom: 0.454em;
@@ -538,7 +538,7 @@ section {
 	&__col {
 		max-width: 20.454em;
 		width: 100%;
-		border-radius: 32px;
+		border-radius: 1.454em;
 		padding: 1.454em;
 		background: linear-gradient(147deg, #0d3435, #27726c);
 		min-height: 19.09em;
@@ -565,10 +565,10 @@ section {
 
 	&__image {
 		position: absolute;
-		bottom: -0.227em;
+		bottom: -0.272em;
 		right: 0;
 		z-index: 0;
-		max-width: 10.636em;
+		width: 10.636em;
 	}
 }
 
@@ -600,7 +600,7 @@ section {
 
 	&__item {
 		padding: 0.833em 1.666em;
-		border-radius: 12px;
+		border-radius: 0.5em;
 		backdrop-filter: blur(50px);
 		background: #A58358;
 		min-height: 3.083em;
@@ -618,7 +618,7 @@ section {
 				content: '';
 				width: 100%;
 				height: 0.166em;
-				border-radius: 10px;
+				border-radius: 0.416em;
 				background-color: #A58358;
 				left: 0;
 			}
@@ -694,7 +694,7 @@ section {
 			cursor: pointer;
 			background-color: $white;
 			opacity: 0.4;
-			border-radius: 4px;
+			border-radius: 0.181em;
 	
 			&.slick-active {
 				background-color: $white;
@@ -730,7 +730,7 @@ section {
 	}
 
 	&__item {
-		border-radius: 32px;
+		border-radius: 1.454em;
 		padding: 1.636em 2.181em;
 		min-height: 19.09em;
 		position: relative;
@@ -788,7 +788,7 @@ section {
 		bottom: 0;
 		right: 0;
 		z-index: 0;
-		max-width: 13.636em;
+		width: 13.636em;
 		max-height: 16em;
 	}
 }
@@ -836,7 +836,7 @@ section {
 }
 
 .party-box {
-	border-radius: 32px;
+	border-radius: 1.454em;
 	border: 0.045em solid $accent;
 	padding: 0.909em 1.818em;
 
@@ -902,7 +902,7 @@ section {
 		display: flex;
 		align-items: center;
 		gap: 2.727em;
-		max-width: 30.272em;
+		width: 30.272em;
 	}
 
 	&__item {
