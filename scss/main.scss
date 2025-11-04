@@ -186,6 +186,7 @@ section {
 	height: 49.09em;
 	position: relative;
 	padding: 0.772em 0 2.136em;
+	overflow: hidden;
 
 	&__top {
 		display: flex;
@@ -330,6 +331,10 @@ section {
 	&__title {
 		text-align: center;
 	}
+
+	&__button {
+		margin: 0 auto;
+	}
 }
 
 .challenge-offer {
@@ -354,18 +359,20 @@ section {
 	&__mark {
 		border-radius: 2.4em;
 		background: #F4D5AE;
-		padding: 0.4em 1.1em;
+		padding: 0.4em;
 		font-size: 0.909em;
 		font-weight: 250;
 		// min-width: 130px;
 		color: $black;
 		text-align: center;
 		white-space: nowrap;
+		max-width: max-content;
+		min-width: 5.4em;
 	}
 
 	&__progress {
 		width: 100%;
-		margin-right: 1,363em;
+		margin-right: 1.363em;
 	}
 
 	&__info {
@@ -374,18 +381,30 @@ section {
 		gap: 1.59em;
 	}
 
-	&__approve {
+	&__approve,
+	&__reward {
 		display: flex;
 		align-items: center;
 		gap: 0.454em;
 		white-space: nowrap;
 		border-radius: 0.727em;
-		background: #85CAC5;
 		padding: 0.454em 0.909em;
 
 		&-text {
 			font-size: 0.818em;
 			font-weight: 500;
+		}
+
+		&-number {
+			font-size: 1.09em;
+			font-weight: 500;
+		}
+	}
+
+	&__approve {
+		background: #85CAC5;
+
+		&-text {
 			color: $black;
 		}
 
@@ -397,23 +416,7 @@ section {
 	}
 
 	&__reward {
-		display: flex;
-		align-items: center;
-		gap: 0.454em;
-		white-space: nowrap;
-		border-radius: 0.727em;
 		background: rgba(9, 36, 35, 0.5);
-		padding: 0.454em 0.909em;
-
-		&-text {
-			font-size: 0.818em;
-			font-weight: 500;
-		}
-
-		&-number {
-			font-size: 1.09em;
-			font-weight: 500;
-		}
 	}
 }
 
@@ -501,7 +504,7 @@ section {
 		align-items: center;
 		position: relative;
 
-		&::before {
+		&.filled::before {
 			content: '';
 			position: absolute;
 			width: 0.909em;
@@ -511,19 +514,19 @@ section {
 			transition: width 0.3s ease, height 0.3s ease;
 		}
 
-		&--0 {
+		&--0.filled {
 			&::before {
 				left: 0;
 			}
 		}
 
-		&--50 {
+		&--50.filled {
 			&::before {
 				left: calc(50% - 0.454em);
 			}
 		}
 
-		&--100 {
+		&--100.filled {
 			&::before {
 				right: 0;
 			}
@@ -546,6 +549,9 @@ section {
 		position: relative;
 		overflow: hidden;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.909em;
 	}
 
 	&__title {
@@ -559,7 +565,6 @@ section {
 		font-size: 1em;
 		font-weight: 500;
 		line-height: 140%;
-		margin-top: 0.909em;
 		position: relative;
    		z-index: 1;
 	}
@@ -569,7 +574,7 @@ section {
 		bottom: -0.272em;
 		right: 0;
 		z-index: 0;
-		width: 10.636em;
+		width: 13.636em;
 	}
 }
 
@@ -602,7 +607,6 @@ section {
 	&__item {
 		padding: 0.833em 1.666em;
 		border-radius: 0.5em;
-		backdrop-filter: blur(50px);
 		background: #A58358;
 		min-height: 3.083em;
 		font-size: 1.09em;
@@ -987,6 +991,11 @@ section {
 		display: none;
 	}
 
+	.container {
+		padding: 0 20px;
+		max-width: 100%;
+	}
+
 	.desktop-hidden {
 		display: block;
 	}
@@ -1001,6 +1010,7 @@ section {
 
 	.main-button {
 		font-size: 18px;
+		min-width: 100%;
 	}
 
 	.description {
@@ -1010,8 +1020,8 @@ section {
 
 		&__row {
 			position: relative;
-			top: inherit;
-			left: inherit;
+			top: auto;
+			left: auto;
 			padding: 0 20px;
 			max-width: 100%;
 		}
@@ -1113,7 +1123,7 @@ section {
 					opacity: 1;
 					width: 28px;
 					height: 28px;
-					top: -2px;
+					top: -4px;
 					right: 4px;
 				}
 	
@@ -1178,6 +1188,195 @@ section {
 
 		.languages-select {
 			display: none;
+		}
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.challenge {
+		&__title {
+			text-align: left;
+		}
+
+		&__row {
+			gap: 30px;
+		}
+	}
+
+	.challenge-offer {
+		&__item {
+			min-height: 420px;
+			border-radius: 32px;
+			padding: 38px 10px;
+			gap: normal;
+			justify-content: flex-start;
+			gap: 100px;
+		}
+
+		&__col {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 60px;
+		}
+
+		&__mark {
+			font-size: 20px;
+			padding: 8px;
+			border-radius: 48px;
+			min-width: 126px;
+		}
+
+		&__progress {
+			margin-right: 0;
+		}
+
+		&__info {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+		}
+
+		&__approve,
+		&__reward {
+			border-radius: 16px;
+			padding: 10px 20px;
+			gap: 10px;
+
+			&-text {
+				font-size: 16px;
+			}
+
+			&-number {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.progress-container {
+		max-width: 100%;
+	}
+
+	.markers {
+		top: -7px;
+
+		&__mark {
+			width: 20px;
+			height: 20px;
+
+			&.filled::before {
+				width: 20px;
+				height: 20px;
+			}
+
+			&--50.filled {
+				&::before {
+					left: calc(50% - 10px);
+				}
+			}
+		}
+	}
+
+	.progress-line {
+		height: 6px;
+		border-radius: 8px;
+		margin-bottom: 10px;
+	}
+
+	.progress-label-top,
+	.progress-label-bottom {
+		font-size: 18px;
+	}
+
+	.progress-label-top {
+		&--center {
+			left: 48.5%;
+		}
+	}
+
+	.progress-label-bottom {
+		top: 20px;
+
+		&--center {
+			left: 43%;
+		}
+	}
+
+	.challenge-columns {
+		flex-direction: column;
+		gap: 30px;
+
+		&__col {
+			max-width: 100%;
+			border-radius: 32px;
+			padding: 20px;
+			min-height: 420px;
+			gap: 20px;
+		}
+
+		&__title {
+			font-size: 24px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+
+		&__image {
+			width: 280px;
+		}
+	}
+
+	.mechanics {
+		background-image: none;
+		background-color: #D6C9B8;
+
+		&__row {
+			position: relative;
+			top: auto;
+			left: auto;
+			padding: 0 20px;
+			max-width: 100%;
+		}
+
+		&__items {
+			margin-top: 54px;
+		}
+
+		&__button {
+			margin-top: 54px;
+		}
+	}
+
+	.mechanics-items {
+		gap: 20px;
+
+		&__item {
+			padding: 20px;
+			border-radius: 12px;
+			min-height: 115px;
+			font-size: 18px;
+
+			&:first-child,
+			&:last-child {
+				&:before {
+					height: 4px;
+					border-radius: 10px;
+				}
+			}
+
+			&:first-child {
+				&:before {
+					top: -20px;
+				}	
+			}
+
+			&:last-child {
+				&:before {
+					bottom: -20px;
+				}	
+			}
 		}
 	}
 }
