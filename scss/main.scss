@@ -28,8 +28,8 @@ html {
 }
 
 body {
-	font-size: 1.112vw;
-	// font-size: 16px
+	font-size: 1.146vw;
+	// font-size: 22px
 	font-weight: 400;
 	min-width: 320px;
 	position: relative;
@@ -111,27 +111,10 @@ button {
 }
 
 .container {
-	max-width: 1450px;
+	max-width: 65.90em;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 0.909em;
 	width: 100%;
-}
-
-.button {
-	font-weight: 500;
-	text-align: center;
-	padding: 1.125em 1.25em;
-	font-size: 1em;
-	font-family: $default-font;
-	cursor: pointer;
-	background-color: $white;
-	color: $text;
-	transition: .3s all ease;
-	display: inline-block;
-
-	&:hover {
-		box-shadow: inset 0 0 0 30px rgba(255, 255, 255, .1);
-	}
 }
 
 a { 
@@ -141,22 +124,22 @@ a {
 } 
 
 section {
-	padding: 80px 0;
+	padding: 3.636em 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	min-height: 1080px;
+	min-height: 49.09em;
 	position: relative;
 }
 
 .text-accent {
 	color: $accent;
-	font-size: 36px;
+	font-size: 1.636em;
 	font-family: $primary-font;
 }
 
 .title {
-	font-size: 50px;
+	font-size: 2.272em;
 	font-family: $primary-font;
 
 	&--white {
@@ -173,13 +156,13 @@ section {
 }
 
 .main-button {
-    min-width: 325px;
-    font-size: 22px;
+    min-width: 14.772em;
+    font-size: 1em;
     line-height: 100%;
     font-weight: 500;
     border-radius: 16px;
 	background: $primary;
-    padding: 19px 22px;
+    padding: 0.863em 1em;
     text-align: center;
     -webkit-transition: .3s all ease;
     transition: .3s all ease;
@@ -187,7 +170,7 @@ section {
     width: max-content;
 
 	&:hover {
-		box-shadow: inset 0 0 0 35px rgba(255,255,255,.1);
+		box-shadow: inset 0 0 0 1.59em rgba(255,255,255,.1);
 	}
 
 	&--ttu {
@@ -200,19 +183,18 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	min-height: 1080px;
+	height: 49.09em;
 	position: relative;
-	height: 100vh;
-	padding: 17px 0 47px;
+	padding: 0.772em 0 2.136em;
 
 	&__top {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 10px;
-		max-width: 1450px;
+		padding: 0.454em;
+		max-width: 65.90em;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 0.909em;
 		width: 100%;
 	}
 
@@ -223,19 +205,19 @@ section {
 	}
 
 	&__button {
-		min-width: 213px;
+		min-width: 9.681em;
 	}
 
 	&__title {
 		color: #F24646;
-		font-size: 160px;
+		font-size: 7.272em;
 		font-family: $primary-font;
 		text-align: center;
-		margin-top: 53px;
+		margin-top: 0.331em;
 		position: relative;
 		z-index: 1;
 		text-transform: uppercase;
-		text-shadow: 0 6px 6px rgba(0, 0, 0, .35);
+		text-shadow: 0 0.0375em 0.0375em rgba(0, 0, 0, .35);
 	}
 
 	&__heroes {
@@ -243,7 +225,7 @@ section {
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		max-width: 1438px;
+		max-width: 65.363em;
 		z-index: 2;
 	}
 }
@@ -254,9 +236,9 @@ section {
 }
 
 .header-info {
-	max-width: 1450px;
+	max-width: 65.90em;
 	margin: auto auto 0;
-	padding: 0 20px;
+	padding: 0 0.909em;
 	width: 100%;
 
 	&__row {
@@ -269,26 +251,26 @@ section {
 
 	&__date {
 		font-family: $primary-font;
-		font-size: 40px;
+		font-size: 1.818em;
 	}
 }
 
 .header-sponsor {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 1.363em;
 
 	&__text {
-		font-size: 22px;
+		font-size: 1em;
 	}
 
 	&__icon {
-		max-width: 217px;
+		max-width: 9.863em;
 	}
 }
 
 .logo {
-	max-width: 100px;
+	max-width: 4.545em;
 }
 
 .main-menu {
@@ -296,12 +278,12 @@ section {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 80px;
+		gap: 3.636em;
 	}
 
 	&__link {
 		color: $black;
-		font-size: 20px;
+		font-size: 0.909em;
 		font-weight: 500;
 
 		&:hover {
@@ -314,7 +296,7 @@ section {
 	background-image: url('../img/bg-1.jpg');
 
 	&__row {
-		max-width: 1030px;
+		max-width: 46.818em;
 		width: 100%;
 		position: absolute;
 		top: 25%;
@@ -322,16 +304,16 @@ section {
 	}
 
 	&__text {
-		font-size: 22px;
+		font-size: 1em;
 		color: $white;
 
 		& + & {
-			margin-top: 30px;
+			margin-top: 1.363em;
 		}
 	}
 
 	&__button {
-		margin: 40px auto 0;
+		margin: 1.818em auto 0;
 	}
 }
 
@@ -341,7 +323,7 @@ section {
 	&__row {
 		display: flex;
 		flex-direction: column;
-		gap: 50px;
+		gap: 2.272em;
 	}
 
 	&__title {
@@ -351,28 +333,28 @@ section {
 
 .challenge-offer {
 	&__item {
-		min-height: 216px;
+		min-height: 9.818em;
 		width: 100%;
 		border-radius: 32px;
 		background-color: #255255;
-		padding: 28px 50px;
+		padding: 1.272em 2.272em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		gap: 25px;
+		gap: 1.136em;
 	}
 
 	&__col {
 		display: flex;
 		align-items: center;
-		gap: 55px;
+		gap: 2.5em;
 	}
 
 	&__mark {
 		border-radius: 48px;
 		background: #F4D5AE;
-		padding: 8px 22px;
-		font-size: 20px;
+		padding: 0.4em 1.1em;
+		font-size: 0.909em;
 		font-weight: 250;
 		// min-width: 130px;
 		color: $black;
@@ -382,32 +364,32 @@ section {
 
 	&__progress {
 		width: 100%;
-		margin-right: 30px;
+		margin-right: 1,363em;
 	}
 
 	&__info {
 		display: flex;
 		align-items: center;
-		gap: 35px;
+		gap: 1.59em;
 	}
 
 	&__approve {
 		display: flex;
 		align-items: center;
-		gap: 10px;
+		gap: 0.454em;
 		white-space: nowrap;
 		border-radius: 16px;
 		background: #85CAC5;
-		padding: 10px 20px;
+		padding: 0.454em 0.909em;
 
 		&-text {
-			font-size: 18px;
+			font-size: 0.818em;
 			font-weight: 500;
 			color: $black;
 		}
 
 		&-number {
-			font-size: 24px;
+			font-size: 1.09em;
 			font-weight: 500;
 			color: $black;
 		}
@@ -416,19 +398,19 @@ section {
 	&__reward {
 		display: flex;
 		align-items: center;
-		gap: 10px;
+		gap: 0.454em;
 		white-space: nowrap;
 		border-radius: 16px;
 		background: rgba(9, 36, 35, 0.5);
-		padding: 10px 20px;
+		padding: 0.454em 0.909em;
 
 		&-text {
-			font-size: 18px;
+			font-size: 0.818em;
 			font-weight: 500;
 		}
 
 		&-number {
-			font-size: 24px;
+			font-size: 1.09em;
 			font-weight: 500;
 		}
 	}
@@ -437,7 +419,7 @@ section {
 
 .progress-container {
 	width: 100%;
-	max-width: 790px;
+	max-width: 35.9em;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -445,12 +427,12 @@ section {
 }
 
 .progress-line {
-	height: 6px;
+	height: 0.272em;
 	background-color: #CACFD2;
 	border-radius: 5px;
 	position: relative;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0.454em;
 
 	&__fill {
 		height: 100%;
@@ -462,8 +444,8 @@ section {
 
 .progress-label-top {
 	position: absolute;
-	top: -40px;
-	font-size: 20px;
+	top: -2em;
+	font-size: 0.909em;
 	font-weight: 400;
 	color: $white;
 
@@ -482,8 +464,8 @@ section {
 
 .progress-label-bottom {
 	position: absolute;
-	top: 20px;
-	font-size: 20px;
+	top: 1em;
+	font-size: 0.909em;
 	font-weight: 500;
 	color: $white;
 
@@ -506,11 +488,11 @@ section {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	top: -7px;
+	top: -0.318em;
 
 	&__mark {
-		width: 20px;
-		height: 20px;
+		width: 0.909em;
+		height: 0.909em;
 		border-radius: 50%;
 		background-color: #CACFD2;
 		display: flex;
@@ -521,8 +503,8 @@ section {
 		&::before {
 			content: '';
 			position: absolute;
-			width: var(--before-width, 0);
-			height: var(--before-height, 0);
+			width: 0.909em;
+			height: 0.909em;
 			border-radius: 50%;
 			background-color: $accent;
 			transition: width 0.3s ease, height 0.3s ease;
@@ -536,7 +518,7 @@ section {
 
 		&--50 {
 			&::before {
-				left: calc(50% - 10px);
+				left: calc(50% - 0.454em);
 			}
 		}
 
@@ -554,35 +536,39 @@ section {
 	justify-content: space-between;
 
 	&__col {
-		max-width: 450px;
+		max-width: 20.454em;
 		width: 100%;
 		border-radius: 32px;
-		padding: 32px;
+		padding: 1.454em;
 		background: linear-gradient(147deg, #0d3435, #27726c);
-		min-height: 420px;
+		min-height: 19.09em;
 		position: relative;
 		overflow: hidden;
+		height: 100%;
 	}
 
 	&__title {
-		font-size: 30px;
+		font-size: 1.363em;
 		font-weight: 700;
-		line-height: 35px;
+		line-height: 1.166em;
 		color: #D6AD78;
 	}
 
 	&__text {
-		font-size: 22px;
+		font-size: 1em;
 		font-weight: 500;
 		line-height: 140%;
-		margin-top: 20px;
+		margin-top: 0.909em;
+		position: relative;
+   		z-index: 1;
 	}
 
 	&__image {
 		position: absolute;
-		bottom: -5px;
+		bottom: -0.227em;
 		right: 0;
 		z-index: 0;
+		max-width: 10.636em;
 	}
 }
 
@@ -591,7 +577,7 @@ section {
 	background-image: url('../img/bg-3.jpg');
 
 	&__row {
-		max-width: 930px;
+		max-width: 42.272em;
 		width: 100%;
 		position: absolute;
 		top: 10%;
@@ -599,26 +585,26 @@ section {
 	}
 
 	&__items {
-		margin-top: 65px;
+		margin-top: 2.954em;
 	}
 
 	&__button {
-		margin: 74px auto 0;
+		margin: 3.363em auto 0;
 	}
 }
 
 .mechanics-items {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 0.909em;
 
 	&__item {
-		padding: 20px 40px;
+		padding: 0.833em 1.666em;
 		border-radius: 12px;
 		backdrop-filter: blur(50px);
 		background: #A58358;
-		min-height: 74px;
-		font-size: 24px;
+		min-height: 3.083em;
+		font-size: 1.09em;
 		position: relative;
 
 		span {
@@ -631,7 +617,7 @@ section {
 				position: absolute;
 				content: '';
 				width: 100%;
-				height: 4px;
+				height: 0.166em;
 				border-radius: 10px;
 				background-color: #A58358;
 				left: 0;
@@ -640,13 +626,13 @@ section {
 
 		&:first-child {
 			&:before {
-				top: -20px;
+				top: -0.833em;
 			}	
 		}
 
 		&:last-child {
 			&:before {
-				bottom: -20px;
+				bottom: -0.833em;
 			}	
 		}
 
@@ -661,29 +647,28 @@ section {
 	}
 
 	&__subtitle {
-		margin-top: 50px;
-		font-size: 30px;
+		margin-top: 1.666em;
+		font-size: 1.363em;
 		font-weight: 500;
 	}
 
 	&__info {
-		margin-top: 20px;
-		font-size: 22px;
+		margin-top: 0.909em;
+		font-size: 1em;
 	}
 
 	&__content {
-		margin-top: 30px;
+		margin-top: 1.363em;
 	}
 
 	&__button {
-		margin: 50px auto 0;
+		margin: 2.272em auto 0;
 	}
 }
 
-
 .content-ranks {
 	&__slider {
-		margin-bottom: 50px;
+		margin-bottom: 2.272em;
 	}
 }
 
@@ -694,7 +679,7 @@ section {
 		justify-content: center;
 		align-items: center;
 		position: absolute;
-		bottom: -22px;
+		bottom: -1em;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 1;
@@ -702,9 +687,9 @@ section {
 		li {
 			position: relative;
 			display: inline-block;
-			width: 16px;
-			height: 4px;
-			margin-right: 9px;
+			width: 0.727em;
+			height: 0.181em;
+			margin-right: 0.409em;
 			padding: 0;
 			cursor: pointer;
 			background-color: $white;
@@ -714,7 +699,7 @@ section {
 			&.slick-active {
 				background-color: $white;
 				opacity: 1;
-				width: 56px;
+				width: 2.545em;
 			}
 	
 			button {
@@ -726,8 +711,8 @@ section {
 				border: 0;
 				outline: 0;
 				background: 0 0;
-				width: 16px;
-				height: 4px;
+				width: 0.727em;
+				height: 0.181em;
 			}
 		}
 	}
@@ -736,7 +721,7 @@ section {
 		height: auto;
 
 		&:not(:last-child) {
-			margin-right: 15px;
+			margin-right: 0.681em;
 		}
 	}
 
@@ -746,8 +731,8 @@ section {
 
 	&__item {
 		border-radius: 32px;
-		padding: 36px 48px;
-		min-height: 420px;
+		padding: 1.636em 2.181em;
+		min-height: 19.09em;
 		position: relative;
 		overflow: hidden;
 		background: #84926B;
@@ -761,27 +746,27 @@ section {
 	}
 
 	&__title {
-		font-size: 44px;
+		font-size: 2em;
 		font-family: $primary-font;
 		color: $accent;
-		line-height: 62px;
-		margin-bottom: 32px;
+		line-height: 1.409em;
+		margin-bottom: 0.727em;
 		position: relative;
 		z-index: 1;
 	}
 
 	&__info {
-		font-size: 26px;
+		font-size: 1.181em;
 		font-family: $primary-font;
-		line-height: 28px;
-		margin-bottom: 32px;
+		line-height: 1.076em;
+		margin-bottom: 1.23em;
 		position: relative;
 		z-index: 1;
 		// max-width: 300px;
 	}
 
 	&__prize {
-		font-size: 20px;
+		font-size: 0.909em;
 		line-height: 140%;
 		font-weight: 500;
 		color: $black;
@@ -790,7 +775,7 @@ section {
 	}
 
 	&__price {
-		font-size: 32px;
+		font-size: 1.454em;
 		line-height: 140%;
 		font-weight: 500;
 		color: $accent;
@@ -803,6 +788,8 @@ section {
 		bottom: 0;
 		right: 0;
 		z-index: 0;
+		max-width: 13.636em;
+		max-height: 16em;
 	}
 }
 
@@ -810,7 +797,7 @@ section {
 	background-image: url('../img/bg-5.jpg');
 
 	&__row {
-		max-width: 640px;
+		max-width: 29.09em;
 		width: 100%;
 		position: absolute;
 		top: 12%;
@@ -820,62 +807,62 @@ section {
 	&__heading {
 		display: flex;
 		align-items: center;
-		gap: 18px;
+		gap: 0.818em;
 	}
 
 	&__logo {
-		max-width: 100px;
+		max-width: 4.545em;
 	}
 
 	&__subtitle {
-		font-size: 30px;
+		font-size: 1.363em;
 		font-weight: 500;
 		color: $accent;
-		margin-top: 60px;
+		margin-top: 2em;
 	}
 
 	&__info {
-		font-size: 22px;
+		font-size: 1em;
 		line-height: 140%;
 	}
 
 	&__box {
-		margin-top: 30px;
+		margin-top: 1.363em;
 	}
 
 	&__button {
-		margin: 50px auto 0;
+		margin: 2.272em auto 0;
 	}
 }
 
 .party-box {
 	border-radius: 32px;
-	border: 1px solid $accent;
-	padding: 20px 40px;
+	border: 0.045em solid $accent;
+	padding: 0.909em 1.818em;
 
 	&__title {
 		font-family: $primary-font;
-		font-size: 44px;
+		font-size: 2em;
 		color: $accent;
 	}
 
 	&__list {
-		margin-top: 20px;
+		margin-top: 0.909em;
 	}
 
 	&__item {
-		font-size: 22px;
+		font-size: 1em;
 		line-height: 140%;
 		position: relative;
-		padding-left: 22px;
+		padding-left: 1em;
 
 		&:before {
 			position: absolute;
 			content: '';
 			background-image: url('../img/check.svg');
 			background-repeat: no-repeat;
-			width: 16px;
-			height: 18px;
+			width: 0.727em;
+			height: 0.818em;
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
@@ -885,42 +872,43 @@ section {
 
 .join {
 	background-image: url('../img/bg-6.jpg');
-	min-height: 915px;
+	min-height: 41.59em;
 
 	&__sponsors {
-		margin-top: 40px;
+		margin-top: 1.818em;
 	}
 
 	&__title {
-		margin-top: 170px;
+		margin-top: 3.4em;
 	}
 
 	&__info {
-		margin-top: 40px;
-		font-size: 22px;
-		max-width: 623px;
+		margin-top: 1.818em;
+		font-size: 1em;
+		max-width: 28.318em;
 	}
 
 	&__button {
-		margin-top: 50px;
+		margin-top: 2.272em;
 	}
 }
 
 .sponsors {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 2.272em;
 
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 60px;
+		gap: 2.727em;
+		max-width: 30.272em;
 	}
 
 	&__item {
 		display: flex;
 		align-items: center;
-		height: 46px;
+		height: 2.09em;
 		width: auto;
 	}
 }
@@ -928,21 +916,21 @@ section {
 .sponsors-general {
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	gap: 1.818em;
 
 	&__text {
 		font-family: $primary-font;
-		font-size: 50px;
+		font-size: 2.272em;
 	}
 
 	&__image {
-		max-width: 473px;
+		max-width: 21.5em;
 	}
 }
 
 .footer {
 	background-color: #081514;
-	padding: 40px 45px;
+	padding: 1.818em 2.045em;
 
 	&__row {
 		display: flex;
@@ -953,25 +941,25 @@ section {
 
 .logo-date {
 	&__image {
-		max-width: 100px;
+		max-width: 4.545em;
 	}
 
 	&__info {
-		margin-top: 10px;
-		font-size: 16px;
+		margin-top: 0.625em;
+		font-size: 0.727em;
 	}
 }
 
 .connect-menu {
-	max-width: 1023px;
+	max-width: 46.5em;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 20px;
+	gap: 0.909em;
 
 	&__item {
-		font-size: 20px;
+		font-size: 0.909em;
 	}
 
 	&__link {

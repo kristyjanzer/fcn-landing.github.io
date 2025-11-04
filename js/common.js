@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const progressLine = container.querySelector('.progress-line');
         const progressFill = progressLine.querySelector('.progress-line__fill');
         const markers = container.querySelectorAll('.markers__mark');
-        let lastValue = parseInt(progressLine.dataset.value);
 
         function updateProgress() {
             const currentValue = parseInt(progressLine.dataset.value);
@@ -60,11 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const markerValue = parseInt(marker.dataset.value);
 
                 if (currentValue >= markerValue) {
-                    marker.style.setProperty('--before-width', '20px');
-                    marker.style.setProperty('--before-height', '20px');
+                    marker.classList.add('filled');
                 } else {
-                    marker.style.setProperty('--before-width', '0');
-                    marker.style.setProperty('--before-height', '0');
+                    marker.classList.remove('filled');
                 }
             });
         }
