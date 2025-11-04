@@ -54,9 +54,9 @@ body {
 		// }
 	}
 
-	&.lock {
-		overflow: hidden;
-	}
+	// &.lock {
+	// 	overflow: hidden;
+	// }
 }
 
 img {
@@ -194,8 +194,9 @@ section {
 		padding: 0.454em;
 		max-width: 65.90em;
 		margin: 0 auto;
-		padding: 0 0.909em;
+		padding: 0 0.909em 0.909em;
 		width: 100%;
+		position: relative;
 	}
 
 	&__row {
@@ -981,42 +982,139 @@ section {
 	
 }
 
-@media (max-width: 1300px) {
-
-}
-
-
-@media (max-width: 1100px) {
-
-}
-
-
-@media (max-width: 700px) {
-
-}
-
-
 @media (max-width: 500px) {
+	section {
+		padding: 14.544em 0;
+	}
+
+	.text-accent {
+		font-size: 32px;
+	}
+
+	.main-button {
+		font-size: 18px;
+	}
+
+	.description {
+		min-height: 100%;
+		background-image: none;
+		background-color: #2E3A16;
+
+		&__row {
+			position: relative;
+			top: inherit;
+			left: inherit;
+			padding: 0 20px;
+			max-width: 100%;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+	}
+
+	.logo {
+		max-width: 80px;
+	}
+
+	.header {
+		background-image: url('../img/main-bg-mobile.jpg');
+		height: 640px;
+		padding: 20px 0;
+
+		&__heroes {
+			display: none;
+		}
+
+		&__button {
+			max-width: 160px;
+			padding: 15px 10px;
+		}
+
+		&__top {
+			max-width: 100%;
+			padding: 0 20px 15px;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		&__date {
+			font-size: 28px;
+			font-family: $primary-font;
+			text-align: center;
+			padding: 0 20px;
+			margin-top: 10px;
+		}
+
+		&__menu {
+			display: none;
+		}
+
+		&__title {
+			font-size: 54px;
+			padding: 0 20px;
+			margin-top: 145px;
+		}
+	}
+
+	.main-menu {
+		&__list {
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 10px;
+		}
+
+		&__link {
+			font-size: 18px;
+		}
+	}
+
+
 	.header-button-menu {
 		display: block;
-		position: absolute;
-		top: 30px;
-		right: 25px;
+		position: relative;
+		// top: 25px;
+		// right: 20px;
+		z-index: 10;
+
+		&.active {
+			.header-button-menu__icon {
+				&::after {
+					transform: rotate(45deg);
+					opacity: 1;
+					width: 28px;
+					height: 28px;
+					top: -2px;
+					right: 4px;
+				}
+	
+				&::before {
+					transform: scale(0);
+					opacity: 0;
+				}
+			}
+
+			.header-button-menu__body {
+				transform: translateX(0px);
+				display: flex;
+				flex-direction: column;
+			}
+		}
 
 		&__icon {
 			display: block;
 			background: none;
-			width: 25px;
-			height: 18px;
-			color: $white;
+			width: 30px;
+			height: 10px;
+			color: $black;
 			transform: translateY(-50%);
 	
 			&:before,
 			&:after {
 				content: '';
-				width: 24px;
-				height: 18px;
-				border: 0 solid $white;
+				width: 30px;
+				height: 20px;
+				border: 0 solid $black;
 				display: block;
 				box-sizing: border-box;
 				position: absolute;
@@ -1027,11 +1125,11 @@ section {
 	
 			&:before {
 				border-width: 2px 0;
-				background: linear-gradient(to bottom, transparent calc(50% - 2px / 2), $white 0 calc(50% + 2px / 2), transparent 0);
+				background: linear-gradient(to bottom, transparent calc(50% - 2px / 2), $black 0 calc(50% + 2px / 2), transparent 0);
 			}
 	
 			&::after {
-				background: linear-gradient(to bottom, transparent calc(50% - 2px / 2), $white 0 calc(50% + 2px / 2), transparent 0), linear-gradient(to right, transparent calc(50% - 2px / 2), $white 0 calc(50% + 2px / 2), transparent 0);
+				background: linear-gradient(to bottom, transparent calc(50% - 2px / 2), $black 0 calc(50% + 2px / 2), transparent 0), linear-gradient(to right, transparent calc(50% - 2px / 2), $black 0 calc(50% + 2px / 2), transparent 0);
 				transform: rotate(45deg) scale(0);
 				opacity: 0;
 			}
@@ -1039,47 +1137,20 @@ section {
 
 		&__body {
 			z-index: 2;
-			position: fixed;
-			width: 100%;
-			min-height: 100vh;
-			top: 104px;
-			left: 0;
-			background-color: $accent;
-			overflow: auto;
-			-webkit-transform: translateX(100%);
-			-ms-transform: translateY(100%);
+			position: absolute;
+			min-width: 200px;
+			min-height: 100%;
+			top: 40px;
+			right: 0;
+			background-color: transparent;
 			transform: translateX(100%);
-			-webkit-transition: all .5s ease;
-			-o-transition: all .5s ease;
 			transition: all .5s ease;
-			padding: 30px 20px 30px;
-
-			&.active {
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateX(0px);
-				display: flex;
-				flex-direction: column;
-			}
+			padding: 5px;
 		}
 
 		.languages-select {
 			display: none;
 		}
-	}
-
-	.header-menu-open .header-button-menu__icon::before {
-		transform: scale(0);
-		opacity: 0;
-	}
-
-	.header-menu-open .header-button-menu__icon::after {
-		transform: rotate(45deg);
-		opacity: 1;
-		width: 20px;
-		height: 20px;
-		top: 0;
-		right: 4px;
 	}
 }
 
