@@ -85,3 +85,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Button Top
+const scrollBtn = document.querySelector('.scroll-btn');
+const rootElement = document.documentElement;
+
+function checkScroll() {
+    const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+    
+    if ((rootElement.scrollTop / scrollTotal) > 0.25) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+}
+
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+window.addEventListener('scroll', () => {
+    checkScroll();
+});

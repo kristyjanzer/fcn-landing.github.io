@@ -911,7 +911,6 @@ section {
 	&__item {
 		display: flex;
 		align-items: center;
-		height: 2.09em;
 		width: auto;
 	}
 }
@@ -933,7 +932,7 @@ section {
 
 .footer {
 	background-color: #081514;
-	padding: 1.818em 2.045em;
+	padding: 1.818em 0;
 
 	&__row {
 		display: flex;
@@ -975,7 +974,21 @@ section {
 	}
 }
 
+.scroll-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s;
 
+	&:hover {
+		opacity: 0.8;
+	}
+}
 
 
 
@@ -1451,6 +1464,7 @@ section {
 	.party {
 		background-image: none;
 		background-color: #070E0A;
+		padding-bottom: 0;
 
 		&__heading {
 			flex-direction: column;
@@ -1478,6 +1492,12 @@ section {
 		&__button {
 			margin-top: 30px;
 		}
+
+		&__image {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-top: 35px;
+		}
 	}
 
 	.party-box {
@@ -1503,6 +1523,87 @@ section {
 				top: 14px;
 				transform: none;
 			}
+		}
+	}
+
+	.join {
+		min-height: 926px;
+		background-image: url('../img/bg-6-mobile.jpg');
+
+		&__sponsors {
+			margin-top: 0;
+		}
+
+		&__title {
+			margin-top: 60px;
+		}
+
+		&__info {
+			margin-top: 30px;
+			font-size: 18px;
+			max-width: 100%;
+		}
+
+		&__button {
+			margin-top: 30px;
+		}
+	}
+
+	.sponsors {
+		gap: 30px;
+
+		&__list {
+			width: 100%;
+			gap: 20px;
+		}
+	}
+
+	.sponsors-general {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: normal;
+
+		&__text {
+			font-size: 34px;
+		}
+
+		&__image {
+			max-width: 236px;
+		}
+	}
+
+	.footer {
+		padding: 60px 0;
+
+		&__row {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+
+		&__logo {
+			margin-top: 60px;
+		}
+	}
+
+	.logo-date {
+		&__image {
+			max-width: 100px;
+		}
+
+		&__info {
+			font-size: 16px;
+			margin-top: 22px;
+		}
+	}
+
+	.connect-menu {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+		max-width: 100%;
+
+		&__item {
+			font-size: 18px;
 		}
 	}
 
