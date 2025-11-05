@@ -826,6 +826,7 @@ section {
 	&__info {
 		font-size: 1em;
 		line-height: 140%;
+		margin-top: 1.363em;
 	}
 
 	&__box {
@@ -984,6 +985,14 @@ section {
 }
 
 @media (max-width: 500px) {
+	.cont-row {
+		position: relative;
+		top: auto;
+		left: auto;
+		padding: 0 20px;
+		max-width: 100%;
+	}
+
 	.mobile-hidden {
 		display: none;
 	}
@@ -1014,14 +1023,6 @@ section {
 		min-height: 100%;
 		background-image: none;
 		background-color: #2E3A16;
-
-		&__row {
-			position: relative;
-			top: auto;
-			left: auto;
-			padding: 0 20px;
-			max-width: 100%;
-		}
 
 		&__text {
 			font-size: 18px;
@@ -1189,7 +1190,8 @@ section {
 	}
 
 	.title {
-		font-size: 30px;
+		font-size: 34px;
+		text-align: left;
 	}
 
 	.challenge {
@@ -1329,14 +1331,6 @@ section {
 		background-image: none;
 		background-color: #D6C9B8;
 
-		&__row {
-			position: relative;
-			top: auto;
-			left: auto;
-			padding: 0 20px;
-			max-width: 100%;
-		}
-
 		&__items {
 			margin-top: 54px;
 		}
@@ -1450,6 +1444,64 @@ section {
 				&.slick-active {
 					width: 56px;
 				}
+			}
+		}
+	}
+
+	.party {
+		background-image: none;
+		background-color: #070E0A;
+
+		&__heading {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__logo {
+			max-width: 95px;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+			margin-top: 50px;
+		}
+
+		&__info {
+			font-size: 18px;
+			margin-top: 30px;
+		}
+
+		&__box {
+			margin-top: 50px;
+		}
+
+		&__button {
+			margin-top: 30px;
+		}
+	}
+
+	.party-box {
+		border-radius: 32px;
+		border: 1px solid #ffb658;
+		padding: 20px;
+
+		&__title {
+			font-size: 28px;
+		}
+
+		&__list {
+			margin-top: 15px;
+		}
+
+		&__item {
+			font-size: 18px;
+			padding-left: 24px;
+
+			&::before {
+				width: 16px;
+				height: 18px;
+				top: 14px;
+				transform: none;
 			}
 		}
 	}
