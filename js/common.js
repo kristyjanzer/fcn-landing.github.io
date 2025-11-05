@@ -48,7 +48,6 @@ $('.content-ranks-slider').slick({
 
 
 
-
 // Progress Bar
 document.addEventListener('DOMContentLoaded', () => {
     const progressContainers = document.querySelectorAll('.progress-container');
@@ -83,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     progressContainers.forEach(initProgressBar);
 });
+
 
 
 // Button Top
