@@ -1077,7 +1077,7 @@ section {
 		}
 
 		&__title {
-			font-size: 2.888em;
+			font-size: 2.874em;
 			padding: 0 0.384em;
 			margin-top: 2.788em;
 			text-transform: none;
@@ -1092,6 +1092,7 @@ section {
 
 	.header-sponsor {
 		flex-direction: column;
+		gap: 0.555em;
 
 		&__icon {
 			max-width: 10em;
